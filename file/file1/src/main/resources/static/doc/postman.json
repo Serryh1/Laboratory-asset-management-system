@@ -1,0 +1,459 @@
+{
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "f91e0f95-e7ce-4054-8318-0e187d7778a2",
+    "name": "file"
+  },
+  "item": [
+    {
+      "name": "文件接口-申茹婷",
+      "item": [
+        {
+          "name": "多文件上传",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"name\":\"dewey.fritsch\",\"bytes\":[67],\"empty\":true,\"resource\":Error restful return.,\"size\":669,\"inputStream\":{},\"contentType\":\"0887u8\",\"originalFilename\":\"dewey.fritsch\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/apply/upload?subject\u003dozam99",
+              "protocol": "http",
+              "path": [
+                "apply",
+                "upload"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "multipartFile",
+                  "value": "",
+                  "description": "No comments found.(array of file)"
+                },
+                {
+                  "key": "subject",
+                  "value": "tg3e6r",
+                  "description": "No comments found."
+                }
+              ],
+              "variable": []
+            },
+            "description": "多文件上传",
+            "header": []
+          },
+          "description": "多文件上传"
+        },
+        {
+          "name": "文件夹上传",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"name\":\"dewey.fritsch\",\"bytes\":[106],\"empty\":true,\"resource\":Error restful return.,\"size\":693,\"inputStream\":{},\"contentType\":\"hthnue\",\"originalFilename\":\"dewey.fritsch\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/apply/uploads?subject\u003d6y7zzp",
+              "protocol": "http",
+              "path": [
+                "apply",
+                "uploads"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "multipartFile",
+                  "value": "",
+                  "description": "No comments found.(array of file)"
+                },
+                {
+                  "key": "subject",
+                  "value": "hothrt",
+                  "description": "No comments found."
+                }
+              ],
+              "variable": []
+            },
+            "description": "文件夹上传",
+            "header": []
+          },
+          "description": "文件夹上传"
+        },
+        {
+          "name": "文件分类查询",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "subject",
+                  "type": "text",
+                  "description": "学科",
+                  "value": "1pjiya"
+                },
+                {
+                  "key": "fileName",
+                  "type": "text",
+                  "description": "文件名称",
+                  "value": "dewey.fritsch"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/apply/select?fileName\u003ddewey.fritsch\u0026subject\u003d1pjiya",
+              "protocol": "http",
+              "path": [
+                "apply",
+                "select"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "subject",
+                  "value": "vk1gl4",
+                  "description": "学科"
+                },
+                {
+                  "key": "fileName",
+                  "value": "dewey.fritsch",
+                  "description": "文件名称"
+                }
+              ],
+              "variable": []
+            },
+            "description": "文件分类查询",
+            "header": []
+          },
+          "description": "文件分类查询"
+        }
+      ]
+    },
+    {
+      "name": "文件接口-卓秀慧",
+      "item": [
+        {
+          "name": "文件删除",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "No comments found.",
+                  "value": "298"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/apply/delete?id\u003d298",
+              "protocol": "http",
+              "path": [
+                "apply",
+                "delete"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "552",
+                  "description": "No comments found."
+                }
+              ],
+              "variable": []
+            },
+            "description": "文件删除",
+            "header": []
+          },
+          "description": "文件删除"
+        }
+      ]
+    },
+    {
+      "name": "* @description: 邮件发送控制层\r * @author: barbrian\r * @create: 2021-09-19 21:08",
+      "item": [
+        {
+          "name": "Interface name is not set.",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/mail/sendSimpleMail",
+              "protocol": "http",
+              "path": [
+                "mail",
+                "sendSimpleMail"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "",
+            "header": []
+          }
+        },
+        {
+          "name": "Interface name is not set.",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/mail/sendHtmlMail",
+              "protocol": "http",
+              "path": [
+                "mail",
+                "sendHtmlMail"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "",
+            "header": []
+          }
+        },
+        {
+          "name": "Interface name is not set.",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/mail/sendAttachmentsMail",
+              "protocol": "http",
+              "path": [
+                "mail",
+                "sendAttachmentsMail"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "",
+            "header": []
+          }
+        },
+        {
+          "name": "Interface name is not set.",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/mail/sendTemplateMail",
+              "protocol": "http",
+              "path": [
+                "mail",
+                "sendTemplateMail"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "",
+            "header": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "用户管理接口",
+      "item": [
+        {
+          "name": "登录接口",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 950,\n  \"username\": \"dewey.fritsch\",\n  \"password\": \"htf4kj\",\n  \"email\": \"margrett.fisher@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/user/login",
+              "protocol": "http",
+              "path": [
+                "user",
+                "login"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "登录接口",
+            "header": []
+          },
+          "description": "登录接口"
+        },
+        {
+          "name": "注册接口",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 712,\n  \"username\": \"dewey.fritsch\",\n  \"password\": \"h45y14\",\n  \"email\": \"margrett.fisher@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/user/register",
+              "protocol": "http",
+              "path": [
+                "user",
+                "register"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [],
+              "variable": []
+            },
+            "description": "注册接口",
+            "header": []
+          },
+          "description": "注册接口"
+        },
+        {
+          "name": "修改密码接口—王京",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "type": "text",
+                  "description": "No comments found.",
+                  "value": "dewey.fritsch"
+                },
+                {
+                  "key": "password",
+                  "type": "text",
+                  "description": "No comments found.",
+                  "value": "94gvez"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/user/rewrite",
+              "protocol": "http",
+              "path": [
+                "user",
+                "rewrite"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "username",
+                  "value": "dewey.fritsch",
+                  "description": "No comments found."
+                },
+                {
+                  "key": "password",
+                  "value": "9t55u1",
+                  "description": "No comments found."
+                }
+              ],
+              "variable": []
+            },
+            "description": "修改密码接口—王京",
+            "header": []
+          },
+          "description": "修改密码接口—王京"
+        },
+        {
+          "name": "登出接口—王京",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://192.168.1.101:8889/user/logout",
+              "protocol": "http",
+              "path": [
+                "user",
+                "logout"
+              ],
+              "host": [
+                "192.168.1.101"
+              ],
+              "port": "8889",
+              "query": [
+                {
+                  "key": "flashAttributes",
+                  "value": "",
+                  "description": "No comments found."
+                },
+                {
+                  "key": "└─any object",
+                  "value": "",
+                  "description": "any object."
+                }
+              ],
+              "variable": []
+            },
+            "description": "登出接口—王京",
+            "header": []
+          },
+          "description": "登出接口—王京"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acmlab.file.mapper.DeviceMapper">
+
+<!-- 通用查询映射结果 -->
+<resultMap id="BaseResultMap" type="com.acmlab.file.entity.Device">
+    <id column="sid" property="sid" />
+    <result column="name" property="name" />
+    <result column="classify" property="classify" />
+    <result column="quantity" property="quantity" />
+</resultMap>
+<insert id="add" parameterType="com.acmlab.file.entity.Device">
+    INSERT INTO device(classify,name,quantity)
+    VALUES (#{device.classify}, #{device.name}, #{device.quantity});
+</insert>
+<delete id="delete" parameterType="com.acmlab.file.entity.Device">
+    delete from device where sid =#{sid};
+</delete>
+<update id="update" parameterType="com.acmlab.file.entity.Device">
+    UPDATE device
+    SET classify = #{device.classify}, name = #{device.name},quantity = #{device.quantity}
+    WHERE sid = #{device.sid}
+</update>
+
+<select id="select" resultType="com.acmlab.file.entity.Device">
+    select * from device
+        <where>
+            <if test="device.name != null">
+                and name like concat('%',#{device.name},'%')
+            </if>
+            <if test="device.sid != null">
+                and sid = #{device.sid}
+            </if>
+            <if test="device.quantity != null and device.classify !=''">
+                and quantity = #{device.quantity}
+            </if>
+            <if test="device.classify != null and device.classify !='' ">
+                and classify = #{device.classify}
+            </if>
+        </where>
+</select>
+</mapper>

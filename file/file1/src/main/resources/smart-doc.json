@@ -1,0 +1,16 @@
+{
+  "serverUrl": "http://192.168.1.101:8889", //服务器地址,非必须。导出postman建议设置成http://{{server}}方便直接在postman直接设置环境变量
+  "isStrict": false, //是否开启严格模式
+  "outPath": "src/main/resources/static/doc",//文档的输出路径
+  "allInOne": true,
+  "packageFilters": "com.acmlab.file.controller",//controller包过滤，多个包用英文逗号隔开
+  "projectName": "file",
+  "createDebugPage": true,
+  "style": "xt256",
+  "appKey": "20210919889130820508319744",
+  "secret": "jr*JLbh&DgU!eduP6wzLFKtX@kf!EZpR",
+  "openUrl": "http://202.115.161.162:7700/api",//torna平台地址，填写自己的私有化部署地址@since 2.0.9
+  "debugEnvName":"测试环境", //torna测试环境
+  "debugEnvUrl":"http://127.0.0.1",//torna
+  "appToken": "9db7b9cc9cc74ade8dda15cb47de8a79" //torna平台
+}

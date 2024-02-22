@@ -1,0 +1,42 @@
+POST http://localhost:8889/apply/delete?id=80,82
+Content-Type: application/json
+token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzE4NzYyNzcsInVzZXJuYW1lIjoi5LiB5rW35qOgIn0.R5Bi4KX7ebg7EcoDxSvT0jp4JAye0bvfzeSd3VccL5s"
+
+
+###
+GET http://localhost:8889/apply/delete?id=83
+Accept: application/json
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzIxMDI2MDMsInVzZXJuYW1lIjoi5LiB5rW35qOgIn0.A1Qr2JFdKQpfEYVcZ0QqdDUFeKSHEYviKFcflUFI_wU"
+
+###
+POST http://localhost:8889/test/?userName=111
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="multipartFile"; filename="jni.jpg"
+Content-Type: multipart/json
+
+< D:\1.jpg
+--WebAppBoundary--
+
+
+###
+POST http://localhost:8889/user/register
+Content-Type: application/json
+
+{
+  "username": "xiao",
+  "password": "8921",
+  "email": "8187@qq.com"
+}
+
+###
+POST http://localhost:8889/user/login
+Content-Type: application/json
+
+{
+  "username": "丁海棠",
+  "password": "123"
+}
+
+ 
